@@ -33,7 +33,11 @@ var uhdata = [
 
 How would you access value "Liberal Arts" in CIP_DESC?
 
+console.log(uhdata[1].CIP_DESC);
+
 2. Display "John" by extracting information from the person object
+
+console.log(person.firstName);
 
 var person = { 
 	firstName: "John", 
@@ -41,6 +45,13 @@ var person = {
 };
 
 3. Use a for...in loop to display the values of this object.
+
+for (var key in bear) {
+  console.log(key);
+  console.log(bear[key]);
+};
+
+  console.log(bear[key]);
 
 var bear = {
 	firstName: "Grizzly", 
@@ -52,4 +63,4 @@ var bear = {
 
 4. Access the object in the previous question to display "Grizzly Bear loves marshmallows" as a string concatenation.
 
-
+console.log(bear.firstName + " " + bear.lastName + " loves " + bear.favoriteFood);
